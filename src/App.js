@@ -1,19 +1,17 @@
 import React, { Component } from 'react';
 import Portal from './portals'
-
-const targets = {
-  recs: document.getElementById('recs')
-}
+import CONSTANTS from './constants'
 
 const App = () => {
-  
+
   return (
     <div className="App">
       
       <h1>Disparate</h1>
       <p>Some stuff</p>
 
-      <Portal name="reco" target={targets.recs}>
+      <Portal target={CONSTANTS.PORTALS.RECOMENDATIONS}>
+        <h1>{CONSTANTS.PORTALS.RECOMENDATIONS}</h1>
         <p>Some more stuff</p>
       </Portal>
 

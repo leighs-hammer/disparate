@@ -4,5 +4,6 @@ const PORTALS = {
 	MINICART: 'mini-cart',
 	MINIBASKET: 'mini-basket',
 	RECENTLYVIEWED: 'recently-viewed',
+	RECOMENDATIONS: 'recommendations',
 }
 export default PORTALS
