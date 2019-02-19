@@ -1,0 +1,107 @@
+body {
+	font-family: sans-serif;
+	color: #333;
+}
+
+.fakeBrowser {
+	width: 95%;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	border: 1px solid rgba(0,0,0,0.2);
+	border-radius: 5px;
+	overflow: hidden;
+}
+.fakeNav {
+	display: flex;
+	height: 70px;
+	background-color: #f1f1f1;
+	justify-content: center;
+	align-items: center;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+.fakeNav ul {
+	width: 100%;
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+}
+.fakeNav li span{
+	border: 1px solid rgba(0,0,0,0.2);
+	margin-left: 8px;
+	margin-right: 8px;
+	padding: 8px;
+}
+.fakeProduct {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 30px;
+}
+.fakeImage {
+	min-height: 400px;
+	max-width: 50%;
+	flex: 1;
+	background-position: center;
+	background-size: cover;
+}
+.fakeForm {
+	padding: 30px;
+	flex: 1;
+}
+h1 {
+	font-size: 30px;
+	font-weight: bold;
+	margin-bottom: 8px;
+	text-transform: uppercase;
+	letter-spacing: -0.9px;
+}
+h2 {
+	font-size: 16px;
+	font-weight: bold;
+	margin-bottom: 8px;
+	text-transform: uppercase;
+}
+p {
+	opacity: 0.9;
+	font-size: 16px;
+}
+button {
+	width: 100%;
+	height: 40px;
+	border-radius: 20px;
+	margin-top: 20px;
+	background-color: rgba(0,0,0,0.2);
+	color: #333;
+	font-size: 18px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.fakePContent {
+	width: 100%;
+	background-color: #f1f1f1;
+	margin-top: 20px;
+	padding: 30px;
+}
+.price {
+	font-weight: bold;
+	margin-bottom: 16px;
+	font-size: 18px;
+}
+.mainPrice {
+	color: green;
+}
+.strike {
+	text-decoration: line-through;
+	color: #333;
+}
+.fakeFakefooter {
+	background-color: rgba(0,0,0,0.4);
+	min-height: 100px;
+	color: #fff;
+}
+
+* [data-react-portal] {
+	border: 1px dashed red;
+}

@@ -1,6 +1,7 @@
 import React from 'react'
+import {connect} from 'react-redux'
 import ReactDOM from 'react-dom'
-import CONSTANTS from '../constants'
+import CONSTANTS from '../../constants'
 const {PORTALS} = CONSTANTS
 
 
@@ -32,6 +33,7 @@ export const getTargetNode = (target) => {
  */
 export const checkForDupes = (target) => {
 	if(!target) {return false}
+
 	const nodes = document.querySelectorAll(generateStringSelector(target))
 	if(nodes && nodes.length > 1 ) {
 		console.error('A duplicate portal node was found, the portal will only target the first node. you may wish to use MultiPortals Component when available')
@@ -41,10 +43,18 @@ export const checkForDupes = (target) => {
 }
 
 // component
-const Portal = (props) => {
-	const {target} = props
-	if (!target) {return null}
 
+const mapStateToProps = state => ({
+	portals: state.portals
+})
+const Portal = (props) => {
+	const {target, portals} = props
+
+	if (!target) {return null}
+	// is enabled?
+	if(!portals[target]) {
+		return null
+	}
 	const node = getTargetNode(target)
 	console.log(getTargetNode(target))
 	if(!node) {return null}
@@ -61,4 +71,4 @@ const Portal = (props) => {
 	)
 }
 
-export default Portal
+export default connect(mapStateToProps)(Portal)

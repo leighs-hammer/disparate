@@ -1,9 +1,10 @@
 const PORTALS = {
 	BASE: 'data-react-portal',
-	BRANDS: 'brands',
-	MINICART: 'mini-cart',
-	MINIBASKET: 'mini-basket',
-	RECENTLYVIEWED: 'recently-viewed',
-	RECOMENDATIONS: 'recommendations',
+	MINICART: 'MINICART',
+	MINIBASKET: 'MINIBASKET',
+	RECENTLYVIEWED: 'RECENTLYVIEWED',
+	RECOMMENDATIONS: 'RECOMMENDATIONS',
+	NOTIFICATIONS: 'NOTIFICATIONS',
+	LOADING: 'LOADING',
 }
 export default PORTALS
